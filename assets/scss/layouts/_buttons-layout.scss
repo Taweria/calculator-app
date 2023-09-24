@@ -1,0 +1,19 @@
+.buttons{
+    margin: 2rem 1rem;
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 2rem 1rem;
+        
+        .reset{
+            grid-column: span 2;
+        }
+    
+        .equal{
+            grid-column: span 2;
+        }
+    }
+
+}
