@@ -1,69 +1,70 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+:root{
+  --bg: #3b4664;
+  --resultbg: #181f32;
+  --grid: #252d44;
+  --buttons1: #647299;
+  --buttons2: #d13f30;
+  --buttonsColor: #444955;
+
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+body{
+  background-color: var(--bg);
+  color: white;
 }
 
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.result{
+  background-color: var(--resultbg);
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 1rem;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .buttons {
   margin: 2rem 1rem;
+  background-color: var(--grid);
+  padding: 1rem;
 }
-.buttons .grid {
+
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin: 2rem 1rem;
+  width: 95%;
+  margin: 0 auto;
 }
-.buttons .grid .reset {
+
+.reset {
   grid-column: span 2;
+  background-color: var(--buttons1);
+  color: white;
 }
-.buttons .grid .equal {
+
+.del{
+  background-color: var(--buttons1);
+  color: white;
+}
+
+.equal {
   grid-column: span 2;
+  background-color: var(--buttons2);
+  color: white;
+}
+
+button{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--buttonsColor);
 }
