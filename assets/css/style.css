@@ -25,12 +25,17 @@ body{
   justify-content: end;
   align-items: center;
   font-size: 2rem;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 
 .buttons {
   margin: 2rem 1rem;
   background-color: var(--grid);
   padding: 1rem;
+  margin: 2rem auto;
 }
 
 .grid {
@@ -67,4 +72,14 @@ button{
   padding: 1rem;
   border-radius: 8px;
   color: var(--buttonsColor);
+}
+
+@media only screen and (min-width: 1000px){
+  .buttons{
+    width: 50%;
+  }
+
+  .result{
+    width: 50%;
+  }
 }
